@@ -8,7 +8,7 @@ Figure out what songs users are listening to on the music streaming app.
 ## How to run the Python scripts
 ```
     cd /path/to/etl.py
-    python(3) etl.py
+    python3 etl.py
 
 ```
 
