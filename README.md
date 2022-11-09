@@ -7,8 +7,9 @@ Figure out what songs users are listening to on the music streaming app.
 
 ## How to run the Python scripts
 ```
-    cd /path/to/etl.py
-    python3 etl.py
+    cd /path/to/create_tables.py
+    python3 create_tables.py   # create and drop tables
+    python3 etl.py  #reads and processes files and loads them into tables
 
 ```
 
@@ -16,7 +17,7 @@ Figure out what songs users are listening to on the music streaming app.
 - data: this folder is holding all the datasets
 - test.ipynb:  queries for data validation.
 - create_tables.py: setup and teardown schemas, run this file to reset tables before each time run ETL scripts.
-- etl.ipynb reads: and processes a single file from song_data and log_data and loads the data into tables.
+- etl.ipynb: reads and processes a single file from song_data and log_data and loads the data into tables.
 - etl.py reads and processes files from song_data and log_data and loads them into tables.
 - sql_queries.py contains all sql queries, and is imported into the last three files above.
 
